@@ -1,32 +1,59 @@
 ---
 layout: post
-title: "Partie 1"
-subtitle: "Les GANs"
+title: "Intelligence artificielle et création artistique"
+subtitle: "L'IA créatrice d'oeuvres d'art"
 date: 2020-02-29 08:32:00 -0400
-background: '/img/posts/01.jpg'
+background: '/img/posts/sixtine.png'
 ---
 
-<p>Paragraphe 1</p>
+<p align="justify">Comme vu en introduction, les algorithmes d’IA sont très efficaces pour réaliser des tâches simples, mais qu’en est-t-il de la création d’œuvres d’art ? Cela semble tout de même bien compliqué pour un algorithme, il s’agît là d’une tâche bien différente de classifier des images ou détecter une anomalie sur un signal : problèmes pour lesquels l’algorithme va analyser des données déjà existantes et en extraire des caractéristiques. </p>
 
-<p>Paragraphe 1</p>
+<img class="img-fluid" src="{{site.baseurl}}/img/part_1/beatles.jpg" alt="deepdreamgenerator">
 
-<h2 class="section-heading">Titre parti</h2>
+<h2 class="section-heading">Qu’en est-t-il de générer du contenu ? </h2>
 
-<p>Paragraphe 1</p>
+<p align="justify">Il s’agit d’une tâche totalement différente : il existe certaines architectures de réseaux de neurones permettant de créer des œuvres d’art à partir d’un vecteur aléatoire. Il existe deux types d’algorithmes : les GANs ou « Generative Adversarial Networks » (en français réseaux adverses génératifs) et les VAEs ou « Variational Auto-Encoders » (en français autoencodeurs variationnels). Ces algorithmes comporte en réalité deux réseaux de neurones qui sont entraînés lors de l’apprentissage. C’est la combinaison de ces deux réseaux qui permettra par la suite de créer du contenu. Pour plus de détails technique, il y a une page dédiée à cela sur le site : les réseaux  génératifs.</p>
 
-<p>Paragraphe 1</p>
+<blockquote class="blockquote">“GANs are the coolest idea in deep learning in the last 10 years.” <br> Yann LeCun</blockquote>
 
-<blockquote class="blockquote">The dreams of yesterday are the hopes of today and the reality of tomorrow. Science has not yet mastered prophecy. We predict too much for the next year and yet far too little for the next ten.</blockquote>
+<h2 class="section-heading">IA et art graphique</h2>
 
-<p>Paragraphe</p>
+<p align="justify">Un des premiers domaines artistiques dans lequel l’IA a été utilisé avec succès est sans doute le domaine de la peinture. Globalement, depuis les travaux de Yann LeCun en 1994 sur les réseaux de neurones convolutionels, les algorithmes de Deep Learning fonctionnent très bien sur les images (tableau de pixel en 2 dimensions) et résolvent des tâches relativement complexe : classification, détection d’objets, de lieu...et génération d’images. Les algorithmes génératifs n’échappent donc pas au fait qu’ils marchent très bien avec les images. Ainsi de nombreuses tableaux ont été créés à partir d’IA. </p>
 
-<h2 class="section-heading">Titre parti</h2>
+<p align="justify">On peut prendre l’exemple de <a href=https://deepdreamgenerator.com/ >Deep Dream Generator</a> qui est un outils consultable en ligne avec lequel des ingénieurs ont réussit à créer des images de rêves.</p>
 
-<p>Paragraphe</p>
+<img class="img-fluid" src="{{site.baseurl}}/img/part_1/ddg.jpg" alt="deepdreamgenerator">
+<span class="caption text-muted">Image de rêve totalement créer par l'IA <a href=https://deepdreamgenerator.com/ >Deep Dream Generator</a></span>
 
-<img class="img-fluid" src="https://source.unsplash.com/Mn9Fa_wQH-M/800x450" alt="Demo Image">
-<span class="caption text-muted">To go places and do things that have never been done before – that’s what living is all about.</span>
+<p align="justify">Il est également possible sur ce site de charger ces propres images et appliquer un style d’un autre tableau. </p>
 
-<p>Paragraphe</p>
+<p align="center"><img class="img-fluid" src="{{site.baseurl}}/img/part_1/van-gogh.jpg" alt="van-gogh"></p>
+<span class="caption text-muted">Photo du Golder Bridge de San Fransisco dans le style de Van Gogh, <a href=https://deepdreamgenerator.com/ >Deep Dream Generator</a></span>
 
-<p>Placeholder text by <a href="http://spaceipsum.com/">Space Ipsum</a>. Photographs by <a href="https://unsplash.com/">Unsplash</a>.</p>
+<p align="justify">Il y a d’autres nombreux exemples d’art pictural réaliser grâce à l’IA et il est parfois difficile de différencier une œuvre créée par IA ou par un humain.</p>
+
+<h2 class="section-heading">Comment ça marche ?</h2>
+
+<p align="justify">Sans rentrer dans les détails trop technique, l’algorithme va prendre en entrée des milliers (voir des dizaines de milliers) d’œuvres d’art humaines afin d’en analyser les moindre détails (couleurs, formes, nuances…) puis va pouvoir reproduire à partir des exemples qu’il aura appris.</p>
+
+<iframe align="middle" width="720" height="400" src="https://www.youtube.com/embed/f_uwKZIAeM0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<p></p>
+
+<iframe align="middle" width="720" height="400" src="https://www.youtube.com/embed/Oex0eWoU7AQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<p align="justify">Ces œuvres d’art rencontre un franc succès auprès du grands publics car elles apportent sans doutes quelque chose de nouveau. De plus une IA qui crée de l’art attire sans doute la curiosité. Certain tableaux ont d’ailleurs été vendus plusieurs centaines de milliers de dollars. </p>
+
+<h2 class="section-heading">Et la musique? Le cinéma? La mode?</h2>
+
+<p align="justify">En plus des arts graphiques, l’IA est évidement utilisé dans le domaine de la musique : en début d’année 2020 elle a permis à une start-up allemande de compléter la 10ème symphonie de Beethoven après avoir appris sur des heures d’enregistrement de ses autres morceaux. Bien que les avis soient partagé sur la qualité du rendu final, il s’agit tout de même d’une prouesse technique. Afin d’explorer l’ensemble des possibilités offertes par l’IA dans le domaine de la musique, je vous renvoie au blog de ma Camarade Gabrielle Kiss qui a choisi de faire sa veille si l’utilisation de l'intelligence artificielle dans la musique. Son analyse est bien approfondie et complète sur le sujet.</p>
+
+<img class="img-fluid" src="https://source.unsplash.com//U3sOwViXhkY/800x450" alt="Photo by Franck V. on Unsplash">
+<span class="caption text-muted">Photo by Franck V. on Unsplash</span>
+
+<p align="justify">L’évolution très rapide de la mode est aussi propice à l'utilisation de l'IA. De nombreuses start-ups se sont lancé dans la création de vêtement utilisant l'IA pour le design.  De même que pour les tableaux, l'algorithme apprend sur des milliers d'exemples afin de lui même générer des modèles. L'avantage principale de cette méthode, outre le fait de produire des designs originaux que seul l'IA pourrait faire, est de pouvoir faire des milliers de modèles, et sélectionner ensuite seulement ceux qui plaise à la marque ou de changer très rapidement de collections. <a href=https://glitch-ai.com/pages/about-us >Glitch<a> est la première start-up a avoir lancé ce concept.</p>
+
+<p align="center"><img class="img-fluid" src="{{site.baseurl}}/img/part_1/glitch.png" alt="glitch"></p>
+<span class="caption text-muted">Robes réalisés par IA, <a href=https://glitch-ai.com/pages/about-us >Glitch</a></span>    
+
+<p align="justify">Néanmoins, on remarque que tous ces moyens de réaliser des œuvres d’art en utilisant des algorithmes génératifs apprennent sur des exemples faits par des humains, et par conséquent il est difficile de considérer ces algorithmes comme créatifs à proprement parler. En effet même si il ya création d’œuvre d’art, d’après la définition de créativité : <i>« La créativité décrit — de façon générale — la capacité d'un individu ou d'un groupe à imaginer ou construire et mettre en œuvre un concept neuf, un objet nouveau ou à découvrir une solution originale à un problème. »</i> (<a href=https://fr.wikipedia.org/wiki/Cr%C3%A9ativit%C3%A9 >Wikipédia</a>), on ne peut pas vraiment parler de créativité pour ces algorithmes car ce n’est pas « neuf » ni « original » mais plutôt une copie, une adaptation ou un mélange de ce qui existe déjà. </p>
